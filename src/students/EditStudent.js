@@ -107,13 +107,13 @@ export default function EditStudent() {
     setErrors(newErrors);
 
     if (formValid) {
-      await axios.put(`http://localhost:8080/student/${id}`, user);
+      await axios.put(`https://festival-support-backend.herokuapp.com/student/${id}`, user);
       navigate("/allstudents");
     }
   };
 
   const loadUser = async () => {
-    const result = await axios.get(`http://localhost:8080/student/${id}`);
+    const result = await axios.get(`https://festival-support-backend.herokuapp.com/student/${id}`);
     setUser(result.data);
   };
 
