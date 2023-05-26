@@ -1,0 +1,17 @@
+.table-container {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.table-container::-webkit-scrollbar {
+  background-color: #212429;
+  width: 12px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #dc3546;
+}
+
+.info {
+  word-break: break-word;
+}
