@@ -101,7 +101,7 @@ export default function AddStudent() {
     setErrors(newErrors);
 
     if (formValid) {
-      await axios.post("http://localhost:8080/student", user);
+      await axios.post("https://festival-support-backend.herokuapp.com/student", user);
       navigate("/allstudents");
     }
   };
