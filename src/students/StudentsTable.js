@@ -14,7 +14,7 @@ export default function StudentsTable() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:8080/students");
+    const result = await axios.get("https://festival-support-backend.herokuapp.com/students");
     setUsers(result.data);
 
     const sortedUsers = result.data.sort((a, b) => {
@@ -28,7 +28,7 @@ export default function StudentsTable() {
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`http://localhost:8080/student/${id}`);
+    await axios.delete(`https://festival-support-backend.herokuapp.com/student/${id}`);
     loadUsers();
   };
 
