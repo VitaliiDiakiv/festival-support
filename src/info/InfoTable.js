@@ -30,7 +30,7 @@ export default function InfoTable() {
       <div className="py-4">
         <h3>Основна інформація</h3>
         <div className="table-container">
-          <table className="table table-bordered shadow w-auto">
+          <table className="table table-bordered shadow">
             <thead className="table-dark">
               <tr>
                 <th scope="col">#</th>
